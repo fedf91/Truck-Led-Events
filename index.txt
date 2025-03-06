@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truckled Events - LED Screen Hire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            width: 30%;
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: white;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            font-size: 18px;
+            background: #ffcc00;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Truckled Events - LED Screen Hire</header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        LED Screens That Make Your Events Shine
+    </section>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Truckled Events specializes in providing high-quality LED screens for event showcases. Whether it's a corporate gathering, concert, or private event, we ensure stunning visuals.</p>
+    </div>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Corporate Events</h3>
+                <p>Professional LED screens for conferences, trade shows, and meetings.</p>
+            </div>
+            <div class="service">
+                <h3>Concerts & Festivals</h3>
+                <p>Large-scale LED screens for concerts and outdoor events.</p>
+            </div>
+            <div class="service">
+                <h3>Private Functions</h3>
+                <p>Enhance weddings, birthdays, and special occasions with stunning visuals.</p>
+            </div>
+        </div>
+    </div>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
