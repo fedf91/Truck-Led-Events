@@ -1,10 +1,6 @@
-// Example: Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
+// Initialize AOS animations
+AOS.init({
+    duration: 1000, // Animation duration
+    once: true,     // Animation runs once
+    easing: 'ease-in-out', // Smooth transitions
 });

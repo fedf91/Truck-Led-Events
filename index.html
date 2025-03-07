@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LED Vibe - Event Showcases</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!-- For animations -->
 </head>
 <body>
     <!-- Navigation -->
@@ -14,25 +15,29 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Bring Your Events to Life</h1>
-            <p>With our LED screens, create unforgettable experiences for your audience.</p>
+    <!-- Hero Section with Video Background -->
+    <section id="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Bring Your Events to Life with Stunning LED Displays</h1>
+            <p>Your events deserve to be unforgettable. With our state-of-the-art LED screens, we’ll help you create awe-inspiring experiences.</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
+        <video autoplay muted loop id="bg-video">
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <div class="section-title">
             <h2>About Us</h2>
         </div>
-        <p>We specialize in renting high-quality LED screens for events, providing stunning visual displays that enhance your experience.</p>
+        <p>At LED Vibe, we specialize in providing top-tier LED screens and technical support to enhance your event experience. We bring your vision to life with stunning displays, whether it’s for corporate events, weddings, or conferences.</p>
     </section>
 
     <!-- Services Section -->
@@ -40,22 +45,42 @@
         <div class="section-title">
             <h2>Our Services</h2>
         </div>
-        <div class="service-card">
-            <h3>LED Screens for Events</h3>
-            <p>Large and clear displays to make your event unforgettable.</p>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <h3>LED Screens for Events</h3>
+                <p>Brilliant displays that create lasting impressions at any event.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Customizable Layouts</h3>
+                <p>Flexible display configurations tailored to your needs.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <h3>Technical Support</h3>
+                <p>Our team ensures smooth operation throughout your event.</p>
+            </div>
         </div>
-        <div class="service-card">
-            <h3>Customizable Layouts</h3>
-            <p>Perfect for any event with flexibility in display configurations.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-title">
+            <h2>Our Work</h2>
         </div>
-        <div class="service-card">
-            <h3>Technical Support</h3>
-            <p>Our team ensures everything runs smoothly during your event.</p>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item" data-aos="fade-up">
+                <img src="portfolio-placeholder1.jpg" alt="Event 1">
+            </div>
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="portfolio-placeholder2.jpg" alt="Event 2">
+            </div>
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="portfolio-placeholder3.jpg" alt="Event 3">
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <div class="section-title">
             <h2>Contact Us</h2>
         </div>
