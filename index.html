@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>LED Vibe - Event Showcases</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Add any external fonts or icons here -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <ul>
+        <div class="logo">LED Vibe</div>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -18,55 +19,58 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <h1>Welcome to [Your Company Name]</h1>
-        <p>Your tagline or mission statement.</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Bring Your Events to Life</h1>
+            <p>With our LED screens, create unforgettable experiences for your audience.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Us</h2>
-        <p>[Insert your about us text here.]</p>
+        <div class="section-title">
+            <h2>About Us</h2>
+        </div>
+        <p>We specialize in renting high-quality LED screens for events, providing stunning visual displays that enhance your experience.</p>
     </section>
 
     <!-- Services Section -->
     <section id="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Service One</h3>
-            <p>[Description of service one.]</p>
+        <div class="section-title">
+            <h2>Our Services</h2>
         </div>
-        <div class="service">
-            <h3>Service Two</h3>
-            <p>[Description of service two.]</p>
+        <div class="service-card">
+            <h3>LED Screens for Events</h3>
+            <p>Large and clear displays to make your event unforgettable.</p>
         </div>
-        <!-- Add more services as needed -->
+        <div class="service-card">
+            <h3>Customizable Layouts</h3>
+            <p>Perfect for any event with flexibility in display configurations.</p>
+        </div>
+        <div class="service-card">
+            <h3>Technical Support</h3>
+            <p>Our team ensures everything runs smoothly during your event.</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/your-email" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Message</button>
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 [Your Company Name]. All rights reserved.</p>
+        <p>&copy; 2025 LED Vibe</p>
     </footer>
 
-    <!-- Scripts -->
     <script src="scripts.js"></script>
 </body>
 </html>
